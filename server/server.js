@@ -7,25 +7,8 @@ const passport = require('passport') // Added for passport
 const session = require('express-session') // Added for session management
 const GoogleStrategy = require('passport-google-oauth20').Strategy // Added for Google OAuth
 
-const userRoutes = require('./routes/userRoutes')
-const siteFeedbacks = require('./routes/SiteFeedbackRoutes')
 
-const User = require('./models/User')  // Assuming you have a User model
-
-const E_billRoutes = require('./routes/E_billRoutes')
-const Payments = require('./routes/Payment')
-const orderedProductRoutes = require("./routes/orderedProductRoutes")
-const orderRoutes = require("./routes/orderRoutes")
-const Delivary = require('./routes/DelivaryRoutes')
-const incomeHistory = require("./routes/incomeHistoryRoutes.js")
-const supplierOrder = require("./routes/supplierOrderRoutes")
-const Cart = require('./routes/Cart.js')
-
-
-const inventoryProductRoutes = require('./routes/inventoryProductRoutes')
-const inventoryRawMaterialRoutes = require('./routes/inventoryRawMaterialRoutes')
-//inventory related routes for product orders from the inventory
-const inventoryProductOrderRoutes = require('./routes/InventoryProductOrderRoutes')
+const User = require('./models/User')
 
 const helmet = require("helmet");
 const csurf = require("csurf");
